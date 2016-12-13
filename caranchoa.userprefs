@@ -1,0 +1,17 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/SCRIPTS/hand.cs">
+    <Files>
+      <File FileName="Assets/SCRIPTS/hand.cs" Line="96" Column="30" />
+      <File FileName="../../Desktop/TRABAJOS/JUEGOS/GIT/CementeryUnity/Assets/scripts/SceneControllers/CryskyIntroController.cs" Line="1" Column="1" />
+      <File FileName="Assets/SCRIPTS/Words.cs" Line="1" Column="1" />
+      <File FileName="../politicake/Assets/SCRIPTS/Spawn_cake.cs" Line="1" Column="1" />
+      <File FileName="../politicake/Assets/SCRIPTS/Projectile.cs" Line="1" Column="1" />
+      <File FileName="../test01_3D/Assets/SCRIPTS/rotate_mouse01/Fish.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
