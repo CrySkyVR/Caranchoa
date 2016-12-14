@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class hand : MonoBehaviour {
@@ -31,11 +31,13 @@ public class hand : MonoBehaviour {
 
 	private float DURATION_IN_SECONDS = 0.3f; // temporizador;
 
+    private int numOstias = 0;
+    private const int NUM_OSTIAS_SHOW_AD = 20;
+    public StartAppADS scriptADS;
 
 
 
-
-	void Start () {
+    void Start () {
 
 
 
@@ -73,9 +75,13 @@ public class hand : MonoBehaviour {
 			Debug.Log(selectorWord);
 			GetComponent<Animator>().Play("hostia01");
 			onHostia = false;
+            numOstias++;
+            if(numOstias % NUM_OSTIAS_SHOW_AD == 0) {
+                scriptADS.launchInterestial();
+            }
 
 
-		}// end onHostia
+        }// end onHostia
 
 		if (efectoHostia) {
 			fulano.GetComponent<Animator> ().Play ("galleta");
