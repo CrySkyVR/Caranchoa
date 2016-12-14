@@ -5,25 +5,18 @@ using StartApp;
 public class StartAppBackPlugin : MonoBehaviour{
 
 	void Start () {
-	#if UNITY_ANDROID
-		StartAppWrapper.loadAd();
-	#endif
+        if (Application.platform == RuntimePlatform.Android)
+            StartAppWrapper.loadAd();
+	
     }
 
 	void Update () {
-	#if UNITY_ANDROID
-		if (Input.GetKeyUp (KeyCode.Escape)) {
-			if (StartAppWrapper.onBackPressed(gameObject.name) == false) {
-				exit();
-			}
-		}
-	#endif
+        if (Application.platform == RuntimePlatform.Android) {
+            if (Input.GetKeyUp(KeyCode.Escape)) {
+                if (StartAppWrapper.onBackPressed(gameObject.name) == false) {
+                    Application.Quit();
+                }
+            }
+        }
     }
-	
-	#if UNITY_ANDROID
-	void exit() {
-		Application.Quit ();
-	}
-	#endif
-
 }
